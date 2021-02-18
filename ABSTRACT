@@ -1,0 +1,10 @@
+	This project considers a network configuration that includes several layers of protection. It includes a packet filter firewall, ‘demilitarized zone’ or ‘DMZ’. 
+  The packet filter is used to prevent low level attacks on systems in the DMZ.
+  The systems in the DMZ are those that must be exposed to the outside world. 
+  These systems receive most of the outside traffic, so a simple packet filter is used for the sake of efficiency. The systems in the DMZ must be carefully maintained
+  by the administrator since they are the most exposed to attack. However, if an attack succeeds on a system in the DMZ, the consequences for the company may be annoying,
+  but they will probably not be life threating, since the internal network will be largely unaffected. 
+	The architecture implemented in this project is an example of Defense-in-Depth. If one layer of defense is breached, there are more layers that the attacker must overcome.
+  If the intruder is skilled enough to break through one level, then he probably has the necessary skills to penetrate other levels. 
+  But it’s likely to take him some time to do so and the longer time that the administrator has to detect intruder’s attack in progress,
+  the better chance there is of preventing it from ultimately succeeding.
